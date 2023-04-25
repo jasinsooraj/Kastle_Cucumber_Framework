@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-27T15:16:23 IST" name="Default suite" finished-at="2023-01-27T15:16:52 IST" duration-ms="29064">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestApplication@4c402120]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-01-27T15:16:23 IST" name="Default test" finished-at="2023-01-27T15:16:52 IST" duration-ms="29064">
+      <class name="Runner.TestApplication">
+        <test-method is-config="true" signature="beforeExecution()[pri:0, instance:Runner.TestApplication@4c402120]" started-at="2023-01-27T15:16:23 IST" name="beforeExecution" finished-at="2023-01-27T15:16:23 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeExecution -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runner.TestApplication@4c402120]" started-at="2023-01-27T15:16:23 IST" name="setUpClass" finished-at="2023-01-27T15:16:23 IST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestApplication@4c402120]" started-at="2023-01-27T15:16:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-27T15:16:32 IST" duration-ms="9075" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["CRUD testing For Charge Maintenance Screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[IIS Parameters Module - Charges maintenance Screen]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "iisParamsPageobjects.HomePageObj.chargesLink()" because "this.iisParamHomePageObj" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "iisParamsPageobjects.HomePageObj.chargesLink()" because "this.iisParamHomePageObj" is null
+at iisParamsStepdefinitions.ChargesMaintenance.navigate_to_charges_maintenance_screen(ChargesMaintenance.java:82)
+at ✽.Navigate to charges maintenance screen(file:///D:/Workspace/IslamicInvest_Cucumber_Framework/src/test/java/iisParamsFeatures/ChargesTest.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestApplication@4c402120]" started-at="2023-01-27T15:16:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-27T15:16:52 IST" duration-ms="19583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["CRUD testing For Product Type  Maintenance Screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[IIS Parameters Module -Product type Screen]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestApplication@4c402120]" started-at="2023-01-27T15:16:52 IST" name="tearDownClass" finished-at="2023-01-27T15:16:52 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="afterExecution()[pri:0, instance:Runner.TestApplication@4c402120]" started-at="2023-01-27T15:16:52 IST" name="afterExecution" finished-at="2023-01-27T15:16:52 IST" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterExecution -->
+      </class> <!-- Runner.TestApplication -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
