@@ -94,5 +94,34 @@ public class HomePageObj {
 	return InsurancecomanyLink;
 	}
 	
+	@FindBy(xpath ="//td[text()='Target Maintenance']" )
+	private WebElement TargetMaintenanceLink;
+	public WebElement TargetMaintenanceLink() {
+		return TargetMaintenanceLink;
+	}
+	@FindBy(xpath ="//td[text()='Vendor Information']" )
+	private WebElement VendorInfoMaintenanceLink;
+	public WebElement VendorInfoMaintenanceLink() {
+		return VendorInfoMaintenanceLink;
+	}
+	//@FindBy(xpath = "//td[normalize-space()='Settlement Policy']")
+	@FindBy(xpath ="//td[text()='Settlement Policy']" )
+	private WebElement SettlementPlicyLink;
+	public WebElement SettlementPlicyLink() {
+		return SettlementPlicyLink;
+	}
+	//@FindBy(xpath = "//td[normalize-space()='Settlement Policy']")
+	@FindBy(xpath ="//td[text()='Yield']" )
+	private WebElement YeildLink;
+	public WebElement YeildLink() {
+		return YeildLink;
+	}
+	@FindBy(xpath = "//td[text()='Third Party Details']")
+	private WebElement ThirdPartyDetailsLink;
+	public  WebElement ThirdPartyDetailsLink() {
+		return ThirdPartyDetailsLink;
+
+	}
+	
 	
 }
