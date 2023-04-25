@@ -59,7 +59,13 @@ public class HomePageObj {
 		return itemLink;
 	}
 	
-	
+	@FindBy(linkText ="Leased Asset" )
+	private WebElement LeasedAssetLink;
+	public WebElement LeasedAssetLink()
+	{
+		return LeasedAssetLink;
+	}
+
 	
 	
 	
