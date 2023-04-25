@@ -65,8 +65,34 @@ public class HomePageObj {
 	{
 		return LeasedAssetLink;
 	}
-
 	
+	@FindBy(xpath ="//td[text()='Deviation']" )
+	private WebElement DeviationLink;
+	public WebElement DeviationLink ()
+	{
+	return DeviationLink;
+	}
+
+	@FindBy(xpath ="//td[text()='Board Members']" )
+	private WebElement BoardmenbersLink;
+	public WebElement BoardmenbersLink ()
+    {
+	return  BoardmenbersLink;
+	}
+	
+	@FindBy(xpath ="//td[text()='Insurance Types']" )
+	private WebElement InsurancetypeLink;
+	public WebElement InsurancetypeLink ()
+	{
+	return InsurancetypeLink;
+	}
+	
+	@FindBy(xpath ="//td[text()='Insurance Companies']" )
+	private WebElement InsurancecomanyLink;
+	public WebElement InsurancecomanyLink ()
+	{
+	return InsurancecomanyLink;
+	}
 	
 	
 }
