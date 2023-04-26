@@ -26,7 +26,6 @@ import utls.ElementActions;
 public class ChargesMaintenance extends BaseClass {
 	WebDriver driver = BaseClass.driver;
 	//WebDriver driver;
-	
 	ConfigFileReader configFileReader = new ConfigFileReader();
 	ConfigFileReader config = new ConfigFileReader();
 	DropDownHelper dropDownHelper;
