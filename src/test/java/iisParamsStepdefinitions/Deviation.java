@@ -46,7 +46,7 @@ public class Deviation extends BaseClass {
 	private ElementActions elementActions =new ElementActions(driver);
 	String excelPath = System.getProperty("user.dir") + "\\Test-data\\IISPTestData.xlsx";
 	 
-	@Given("^User Navigate to IISP URL login$")
+/*	@Given("^User Navigate to IISP URL login$")
 	public void user_navigate_to_iisp_url_login() throws Exception {
 	
 		driver.get(configFileReader.getApplicationUrl("IISP"));
@@ -75,7 +75,7 @@ public class Deviation extends BaseClass {
 	   
 	}
 
-
+*/
 
 	@Then("Navigate to deviation maintenance screen")
 	public void  Navigate_to_deviation_maintenance_screen() throws InterruptedException {
