@@ -35,7 +35,7 @@ public class BaseClass {
 		System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
 //		ChromeOptions options = new ChromeOptions(); 
 //		options. addArguments("--headless");
-		//WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		//ChromeOptions options = new ChromeOptions();
 		//options.addArguments("--incognito");
 		//options.addArguments("--headless");
