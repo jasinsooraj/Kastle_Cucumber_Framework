@@ -4,8 +4,6 @@
 
 Feature: IIS Parameters Module - Charges maintenance Screen
 
-
-
   Scenario: CRUD testing For Charge Maintenance Screen
     Given User Navigate to IISP URL login
     Then log into IISP with valid credentials
