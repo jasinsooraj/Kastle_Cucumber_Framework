@@ -6,8 +6,8 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
-
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 import helper.ScreenshotHelper;
 import io.cucumber.java.After;
@@ -26,6 +26,24 @@ public class HooksClass extends BaseClass {
 	WebDriver driver;
 
 	ScreenshotHelper screenshotHelper = new ScreenshotHelper(driver);
+	/*
+	@BeforeSuite
+	public void login()throws IOException {
+		driver = initializeDriver();
+		System.out.println("Driver Initiated");
+		try {
+			IISParamsCommonOperations obj =new IISParamsCommonOperations();
+			obj.navigate_to_iisp_url_login();
+			obj.input_login_credentials_to_iisp();
+			obj.click_on_parameters_root();
+			}catch(Exception e) {}
+	
+	}
+	@AfterSuite
+	public void logout()throws IOException {
+	
+	}
+	*/
 
 	@Before
 	public void browserSetup(Scenario scenario) throws IOException {
@@ -34,6 +52,12 @@ public class HooksClass extends BaseClass {
 		String name=scenario.getName();
 		System.out.println("Scenario : **"+ name + "** Started executing");
 		ExtentTestManager.startTest(name);
+		/*try {
+		IISParamsCommonOperations obj =new IISParamsCommonOperations();
+		obj.navigate_to_iisp_url_login();
+		obj.input_login_credentials_to_iisp();
+		obj.click_on_parameters_root();
+		}catch(Exception e) {}*/
 	}
 
 	@AfterStep

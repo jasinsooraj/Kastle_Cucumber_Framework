@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -111,6 +112,14 @@ public class WaitHelper {
 	 return element1;
 	 }
 
+	// waitForElementVisible
+		public void waitForElementVisible(By by, int timeOutInSeconds, int pollingEveryInMiliSec) {
+			//Log.info(locator);
+			WebDriverWait wait = getWait(timeOutInSeconds, pollingEveryInMiliSec);
+			WebElement element=driver.findElement(by);
+			wait.until(ExpectedConditions.visibilityOf(element));
+			//ExtentTestManager.getTest().info("Setted wait untill the element is visible");
+		}
 
 
 }

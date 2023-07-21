@@ -39,43 +39,17 @@ public class ChargesMaintenance extends BaseClass {
 	ClicksAndActionsHelper clicksAndActionHelper = new ClicksAndActionsHelper(driver);
 	BrowserHelper browserHelper;
 	CompanyAndBranchPage comapanyandBranchSelectionObj= new CompanyAndBranchPage(driver);
-	HomePageObj iisParamHomePageObj;
+	//HomePageObj iisParamHomePageObj;
 	private ElementActions elementActions =new ElementActions(driver);
 	String excelPath = System.getProperty("user.dir") + "\\Test-data\\IISPTestData.xlsx";
+	IISParamsCommonOperations common=new IISParamsCommonOperations();
 	 
-	@Given("^User Navigate to IISP URL login$")
-	public void user_navigate_to_iisp_url_login() throws Exception {
 	
-		driver.get(configFileReader.getApplicationUrl("IISP"));
-
-	}
-
-	@Then("log into IISP with valid credentials")
-	public void input_login_credentials_to_log_into_iisp() throws Exception {
-		imalLogin.loginToIISPAppByUser();
-		comapanyandBranchSelectionObj.typeCompanyData("1");
-		comapanyandBranchSelectionObj.typeBranchData("102");
-		comapanyandBranchSelectionObj.clickcontinueButtonForCompanyAndBranch();
-		iisParamHomePageObj= (HomePageObj) comapanyandBranchSelectionObj.takeDecision("IISP");
-		
-		
-
-	}
-	@And("Click on Parameters Root OPT")
-	public void click_on_parameters_root_opt() throws InterruptedException {
-		//Thread.sleep(5000);
-		waithelper.waitForElementVisible(iisParamHomePageObj.parametersRootOptLink(), 20000, 100);
-		WebElement rootLink=iisParamHomePageObj.parametersRootOptLink();
-
-		elementActions.clickonElement(rootLink);
-
-	   
-	}
-
 
 	
 
-	@Then("Navigate to charges maintenance screen")
+	//@Then("Navigate to charges maintenance screen")
+	@Given("Navigate to charges maintenance screen")
 	public void navigate_to_charges_maintenance_screen() throws InterruptedException {
 		//Thread.sleep(2000);
 		waithelper.waitForElementVisible(iisParamHomePageObj.chargesLink(), 20000, 100);

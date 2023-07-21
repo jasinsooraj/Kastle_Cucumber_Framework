@@ -10,6 +10,9 @@ Feature: IIS Parameters Module -Product type Screen
     Given User Navigate to IISP URL login
     Then log into IISP with valid credentials
     And Click on Parameters Root OPT
-    Then Open product type maintenance
+    Given  Open product type maintenance
     And Input product Type Values and save
+    And Retrieve Saved Product Type details
+    Then Delete Product Type Created
+    And Close Product Type maintenance Screen
 

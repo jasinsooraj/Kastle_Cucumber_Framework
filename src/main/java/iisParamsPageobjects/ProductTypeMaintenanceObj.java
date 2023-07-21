@@ -40,4 +40,43 @@ public class ProductTypeMaintenanceObj {
 		return productTypeMaintenancelink;
 	}
 	
+	@FindBy(xpath = "//button[@type='button' and @value='Submit' and contains(@id,'save')]")
+	private WebElement saveBtn;
+	public  WebElement saveBtn() {
+		return saveBtn;
+	}
+	@FindBy(xpath = "//*[@id=\"_popup_path_sol_confirm_ok\"]")
+	private WebElement confirmOKButton;
+	public WebElement confirmOKButton() {
+		return confirmOKButton;
+	}
+	
+	@FindBy(xpath = "//*[@id='_popup_path_sol_ok']")
+	private WebElement oKButton;
+	public WebElement oKButton() {
+		return oKButton;
+	}
+	@FindBy(xpath = "//*[contains(@id,'infoBarSearchButton')]")
+	private WebElement searchLookupBtn;
+	public WebElement searchLookupBtn() {
+		return searchLookupBtn;
+	}
+	
+	@FindBy(xpath = "//*[@id='trsProductTypeListGridTbl_Id_M030MT_gs_trsProductTypeVO.TYPE_CODE']")
+	private WebElement filterProductTypetxt;
+	public WebElement filterProductTypetxt() {
+		return filterProductTypetxt;
+	}
+	
+	@FindBy(xpath ="//*[@id='trsProductTypeMaint_delete_M030MT']" )
+	private WebElement deleteBtn;
+	public WebElement deleteBtn() {
+		return deleteBtn;
+	}
+	
+	@FindBy(xpath ="//span[@class='ui-icon ui-icon-close ui-icon-close-tabs-custom' and contains(text(),'Remove Tab')]" )
+	private WebElement removeTab;
+	public WebElement removeTab() {
+		return removeTab;
+	}
 }

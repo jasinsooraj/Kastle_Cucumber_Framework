@@ -2,6 +2,7 @@ package iisParamsPageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -16,6 +17,7 @@ public class IMAL_LoginObj {
 	}
 	
 	@FindBy(id = "j_username")
+	@CacheLookup
 	private WebElement LoginUserNameTxt;
 	public WebElement LoginUserNameTxt() {
 		return LoginUserNameTxt;
@@ -23,6 +25,7 @@ public class IMAL_LoginObj {
 	
 	
 	@FindBy(id = "passwordInp")
+	@CacheLookup
 	private WebElement LoginPasswordTxt;
 	public WebElement LoginPasswordTxt()
 	{
@@ -30,12 +33,14 @@ public class IMAL_LoginObj {
 	}
 	
 	@FindBy(xpath = "//*[@id='login']")
+	@CacheLookup
 	private WebElement LoginBtn;
 	public WebElement LoginBtn() {
 		return  LoginBtn;
 	}
 	
 	@FindBy(css = "#continueWelcBtn > span")
+	@CacheLookup
 	private WebElement continueBtn;
 
 	

@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.interactions.Actions;
 
 import dataProvider.ConfigFileReader;
+import iisParamsPageobjects.HomePageObj;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -25,9 +26,8 @@ public class BaseClass {
 	public Actions Action;
 	Logger log = LogManager.getLogger(BaseClass.class.getName());
 	public static WebDriver driver;
-	
+	public static HomePageObj iisParamHomePageObj;
 	public WebDriver initializeDriver( )throws IOException {
-	
 	ConfigFileReader configFileReader=new ConfigFileReader();
 	String browserName =configFileReader.getBrowser();
 //	String phntomDriverPath=System.getProperty("user.dir")+"\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe";
