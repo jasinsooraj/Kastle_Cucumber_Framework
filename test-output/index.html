@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\in02643\AppData\Local\Temp\testng-eclipse--111909065\testng-customsuite.xml</span>
+                    <span>C:\Users\in02643\AppData\Local\Temp\testng-eclipse--347561523\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestApplication" class="method navigator-link" hash-for-method="runScenario(&quot;CURD Testing of the Target Miantenance Screen&quot;, &quot;Optional[IIS Parameters Module -Target Miantenance...)">runScenario("CURD Testing of the Target Miantenance Screen", "Optional[IIS Parameters Module -Target Miantenance...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +118,32 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestApplication" class="method navigator-link" hash-for-method="runScenario(&quot;CRUD testing For InsuranceType Maintenance Screen&quot;, &quot;Optional[IIS Parameters Module - InsuranceType...)">runScenario("CRUD testing For InsuranceType Maintenance Screen", "Optional[IIS Parameters Module - InsuranceType...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestApplication" class="method navigator-link" hash-for-method="runScenario(&quot;CURD testing of Vendor Information Screen&quot;, &quot;Optional[IIS Parameter Vendor Information]&quot;)">runScenario("CURD testing of Vendor Information Screen", "Optional[IIS Parameter Vendor Information]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestApplication" class="method navigator-link" hash-for-method="runScenario(&quot;CURD Testing of Yeild Roster&quot;, &quot;Optional[Yeild-Yeild Roster]&quot;)">runScenario("CURD Testing of Yeild Roster", "Optional[Yeild-Yeild Roster]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="Runner.TestApplication" class="method navigator-link" hash-for-method="runScenario(&quot;CRUD testing For Charge Maintenance Screen&quot;, &quot;Optional[IIS Parameters Module - Charges maintenance ...)">runScenario("CRUD testing For Charge Maintenance Screen", "Optional[IIS Parameters Module - Charges maintenance ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestApplication" class="method navigator-link" hash-for-method="runScenario(&quot;CRUD testing For Product Type  Maintenance Screen&quot;, &quot;Optional[IIS Parameters Module -Product type S...)">runScenario("CRUD testing For Product Type  Maintenance Screen", "Optional[IIS Parameters Module -Product type S...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestApplication" class="method navigator-link" hash-for-method="runScenario(&quot;CRUD testing For Insurance Companies Maintenance Screen&quot;, &quot;Optional[IIS Parameters Module - Insuran...)">runScenario("CRUD testing For Insurance Companies Maintenance Screen", "Optional[IIS Parameters Module - Insuran...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestApplication" class="method navigator-link" hash-for-method="runScenario(&quot;CRUD testing For Deviation Maintenance Screen&quot;, &quot;Optional[IIS Parameters Module - Deviation mainten...)">runScenario("CRUD testing For Deviation Maintenance Screen", "Optional[IIS Parameters Module - Deviation mainten...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -124,12 +158,98 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Runner.TestApplication</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;CURD Testing of the Target Miantenance Screen&quot;, &quot;Optional[IIS Parameters Module -Target Miantenance...)">
+                  </a> <!-- runScenario("CURD Testing of the Target Miantenance Screen", "Optional[IIS Parameters Module -Target Miantenance...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CURD Testing of the Target Miantenance Screen", "Optional[IIS Parameters Module -Target Miantenance Screen]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;1_trs_TargetVO.TARGET_AMOUNT_trsTargetmaintenanceMaintGridTbl_Id_M04MT&quot;]&quot;}
+  (Session info: chrome=114.0.5735.248)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb624e62f9b30a0824f033472ced35b8, findElement {using=xpath, value=//*[@id=&quot;1_trs_TargetVO.TARGET_AMOUNT_trsTargetmaintenanceMaintGridTbl_Id_M04MT&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\in02643\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63903/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb624e62f9b30a0824f033472ced35b8
+	at jdk.internal.reflect.GeneratedConstructorAccessor39.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy47.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at utls.WaitElements.waitVisibilityOfElement(WaitElements.java:42)
+	at utls.ElementActions.typeValue(ElementActions.java:75)
+	at iisParamsStepdefinitions.TargetMiantenance.user_select_input_product_class_country_year_target_amount(TargetMiantenance.java:54)
+	at ✽.User Select Input Product class,country,year,Target Amount(file:///D:/Workspace/IslamicInvest_Cucumber_Framework/IslamicInvest_Cucumber_Framework/src/test/java/iisParamsFeatures/TargetMaintenanceM04MT.feature:10)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">Runner.TestApplication</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;CRUD testing For InsuranceType Maintenance Screen&quot;, &quot;Optional[IIS Parameters Module - InsuranceType...)">
+                  </a> <!-- runScenario("CRUD testing For InsuranceType Maintenance Screen", "Optional[IIS Parameters Module - InsuranceType...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CRUD testing For InsuranceType Maintenance Screen", "Optional[IIS Parameters Module - InsuranceType maintenance Screen]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;CURD testing of Vendor Information Screen&quot;, &quot;Optional[IIS Parameter Vendor Information]&quot;)">
+                  </a> <!-- runScenario("CURD testing of Vendor Information Screen", "Optional[IIS Parameter Vendor Information]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CURD testing of Vendor Information Screen", "Optional[IIS Parameter Vendor Information]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;CURD Testing of Yeild Roster&quot;, &quot;Optional[Yeild-Yeild Roster]&quot;)">
+                  </a> <!-- runScenario("CURD Testing of Yeild Roster", "Optional[Yeild-Yeild Roster]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CURD Testing of Yeild Roster", "Optional[Yeild-Yeild Roster]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;CRUD testing For Charge Maintenance Screen&quot;, &quot;Optional[IIS Parameters Module - Charges maintenance ...)">
@@ -142,10 +262,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;CRUD testing For Product Type  Maintenance Screen&quot;, &quot;Optional[IIS Parameters Module -Product type S...)">
-                  </a> <!-- runScenario("CRUD testing For Product Type  Maintenance Screen", "Optional[IIS Parameters Module -Product type S...) -->
+                  <a name="runScenario(&quot;CRUD testing For Insurance Companies Maintenance Screen&quot;, &quot;Optional[IIS Parameters Module - Insuran...)">
+                  </a> <!-- runScenario("CRUD testing For Insurance Companies Maintenance Screen", "Optional[IIS Parameters Module - Insuran...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("CRUD testing For Product Type  Maintenance Screen", "Optional[IIS Parameters Module -Product type Screen]")</span>
+                  <span class="parameters">("CRUD testing For Insurance Companies Maintenance Screen", "Optional[IIS Parameters Module - Insurance Companies maintenance Screen]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;CRUD testing For Deviation Maintenance Screen&quot;, &quot;Optional[IIS Parameters Module - Deviation mainten...)">
+                  </a> <!-- runScenario("CRUD testing For Deviation Maintenance Screen", "Optional[IIS Parameters Module - Deviation mainten...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("CRUD testing For Deviation Maintenance Screen", "Optional[IIS Parameters Module - Deviation maintenance Screen]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -155,7 +285,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\in02643\AppData\Local\Temp\testng-eclipse--111909065\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\in02643\AppData\Local\Temp\testng-eclipse--347561523\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -212,20 +342,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Runner.TestApplication')
-data.setCell(0, 3, 20490);
+data.setCell(0, 3, 53096);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Runner.TestApplication')
-data.setCell(1, 3, 20093);
+data.setCell(1, 3, 35051);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'Runner.TestApplication')
+data.setCell(2, 3, 33589);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'Runner.TestApplication')
+data.setCell(3, 3, 33411);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'Runner.TestApplication')
+data.setCell(4, 3, 29856);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'Runner.TestApplication')
+data.setCell(5, 3, 23774);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'Runner.TestApplication')
+data.setCell(6, 3, 21939);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -258,23 +408,45 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">20 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("CRUD testing For Charge Maintenance Screen", "Optional[IIS Parameters Module - Charges maintenance ...)</span>
-                <span class="method-start">599 ms</span>
+                <span class="method-start">745 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("CRUD testing For Product Type  Maintenance Screen", "Optional[IIS Parameters Module -Product type S...)</span>
-                <span class="method-start">20696 ms</span>
+                <span class="method-name">runScenario("CRUD testing For Deviation Maintenance Screen", "Optional[IIS Parameters Module - Deviation mainten...)</span>
+                <span class="method-start">30604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("CRUD testing For Insurance Companies Maintenance Screen", "Optional[IIS Parameters Module - Insuran...)</span>
+                <span class="method-start">52544 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("CRUD testing For InsuranceType Maintenance Screen", "Optional[IIS Parameters Module - InsuranceType...)</span>
+                <span class="method-start">85956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("CURD Testing of the Target Miantenance Screen", "Optional[IIS Parameters Module -Target Miantenance...)</span>
+                <span class="method-start">119546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("CURD testing of Vendor Information Screen", "Optional[IIS Parameter Vendor Information]")</span>
+                <span class="method-start">143321 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("CURD Testing of Yeild Roster", "Optional[Yeild-Yeild Roster]")</span>
+                <span class="method-start">196418 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">41188 ms</span>
+                <span class="method-start">231478 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterExecution</span>
-                <span class="method-start">46125 ms</span>
+                <span class="method-start">262906 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

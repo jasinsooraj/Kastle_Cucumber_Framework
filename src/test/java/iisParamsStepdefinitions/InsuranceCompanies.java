@@ -175,7 +175,7 @@ Thread.sleep(4000);
 	@And("Close Insurance Companies maintenance Screen")
 	public void Close_Insurance_Companies_maintenance_Screen() {
 		InsuranceCompanyMaintenanceobj.removeTab().click();
-		elementActions.clickonElement(iisParamHomePageObj.BoardmenbersLink());
+		elementActions.clickonElement(iisParamHomePageObj.InsurancecomanyLink());
 	
 	}
 

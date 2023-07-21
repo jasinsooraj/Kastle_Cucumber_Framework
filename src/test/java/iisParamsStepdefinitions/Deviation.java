@@ -141,7 +141,7 @@ public class Deviation extends BaseClass {
 	@And("Close Deviation maintenance Screen")
 	public void Close_Deviation_maintenance_Screen() {
 		Deviationmaintenanceobj.removeTab().click();
-		elementActions.clickonElement(iisParamHomePageObj.chargesLink());
+		elementActions.clickonElement(iisParamHomePageObj.DeviationLink());
 	
 	}
 

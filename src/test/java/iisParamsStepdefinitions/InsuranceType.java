@@ -129,7 +129,7 @@ Thread.sleep(4000);
 	}
 	
 	@And("Retrieve Saved InsuranceType details")
-	public void Retrieve_Saved_InsuranceType_details () {
+	public void Retrieve_Saved_InsuranceType_details () throws InterruptedException {
 		elementActions.clickonElement(InsuranceTypeMaintenanceobj.searchLookupBtn());
 	
 		waithelper.waitForElementVisible(InsuranceTypeMaintenanceobj.filterInsurancetypeText(), 20000, 100);
@@ -137,6 +137,7 @@ Thread.sleep(4000);
 		elementActions.typeValue(InsuranceTypeMaintenanceobj.filterInsurancetypeText(),Insurancetype.InsuranceTypeCode);
 		elementActions.typeEnter(InsuranceTypeMaintenanceobj.filterInsurancetypeText());
 	By gridRowtoDoubleClick=By.xpath("//td[@role='gridcell' and contains(text(),'"+Insurancetype.InsuranceTypeCode+"')]");
+	Thread.sleep(1000);
 	elementActions.doubleClickButton(gridRowtoDoubleClick);
 	}
 
@@ -154,7 +155,7 @@ Thread.sleep(4000);
 	@And("Close InsuranceType maintenance Screen")
 	public void Close_InsuranceType_maintenance_Screen() {
 		InsuranceTypeMaintenanceobj.removeTab().click();
-		elementActions.clickonElement(iisParamHomePageObj.BoardmenbersLink());
+		elementActions.clickonElement(iisParamHomePageObj.InsurancetypeLink());
 	
 	}
 
