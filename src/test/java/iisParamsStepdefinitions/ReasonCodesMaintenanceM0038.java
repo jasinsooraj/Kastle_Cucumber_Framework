@@ -1,4 +1,4 @@
-/*package iisParamsStepdefinitions;
+package iisParamsStepdefinitions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -46,36 +46,6 @@ public class ReasonCodesMaintenanceM0038 extends BaseClass {
 	private ElementActions elementActions =new ElementActions(driver);
 	String excelPath = System.getProperty("user.dir") + "\\Test-data\\IISPTestData.xlsx";
 	 
-	@Given("^User Navigate to IISP URL login$")
-	public void user_navigate_to_iisp_url_login() throws Exception {
-	
-		driver.get(configFileReader.getApplicationUrl("IISP"));
-
-	}
-
-	@Then("log into IISP with valid credentials")
-	public void input_login_credentials_to_log_into_iisp() throws Exception {
-		imalLogin.loginToIISPAppByUser();
-		comapanyandBranchSelectionObj.typeCompanyData("1");
-		comapanyandBranchSelectionObj.typeBranchData("1");
-		comapanyandBranchSelectionObj.clickcontinueButtonForCompanyAndBranch();
-		iisParamHomePageObj= (HomePageObj) comapanyandBranchSelectionObj.takeDecision("IISP");
-		
-		
-
-	}
-	@And("Click on Parameters Root OPT")
-	public void click_on_parameters_root_opt() throws InterruptedException {
-		//Thread.sleep(5000);
-		waithelper.waitForElementVisible(iisParamHomePageObj.parametersRootOptLink(), 20000, 100);
-		WebElement rootLink=iisParamHomePageObj.parametersRootOptLink();
-
-		elementActions.clickonElement(rootLink);
-
-	   
-	}
-
-
 	
 
 	@Then("Navigate to ReasonCode Maintenance screen")
@@ -142,4 +112,4 @@ public class ReasonCodesMaintenanceM0038 extends BaseClass {
 		elementActions.clickonElement(iisParamHomePageObj.ReasonCodeLink());
 	}
 
-}*/
+}
