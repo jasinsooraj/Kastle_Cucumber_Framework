@@ -123,4 +123,16 @@ public class HomePageObj {
 
 	}
 	
+	@FindBy(xpath ="//td[text()='Reason Codes']" )
+	private WebElement ReasonCodeLink;
+	public WebElement ReasonCodeLink() {
+		return ReasonCodeLink;
+	
+	}
+	@FindBy(xpath ="//td[text()='Sub Purpose Codes']" )
+	private WebElement SubPurposeCodeLink;
+	public WebElement SubPurposeCodeLink() {
+		return SubPurposeCodeLink;
+	}
+	
 }
