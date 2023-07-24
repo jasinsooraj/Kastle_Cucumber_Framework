@@ -1,5 +1,6 @@
 Feature: IIS Parameter Vendor Information
 
+@CRUD @Regression
   Scenario: CURD testing of Vendor Information Screen
     Given User Navigate to IISP URL login
     Then log into IISP with valid credentials

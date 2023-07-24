@@ -1,8 +1,1 @@
-file:src/test/java/iisParamsFeatures/YieldRegister.feature:3
-file:src/test/java/iisParamsFeatures/YeildRoster.feature:3
-file:src/test/java/iisParamsFeatures/VendorInformation.feature:3
-file:src/test/java/iisParamsFeatures/BoardMembers.feature:9
 file:src/test/java/iisParamsFeatures/Deviation.feature:9
-file:src/test/java/iisParamsFeatures/SettlementPolicy.feature:3
-file:src/test/java/iisParamsFeatures/TargetMaintenanceM04MT.feature:5
-file:src/test/java/iisParamsFeatures/LeasedAsset.feature:6

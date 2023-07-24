@@ -1,9 +1,12 @@
 package iisParamsStepdefinitions;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import dataProvider.ConfigFileReader;
 import helper.BrowserHelper;
@@ -81,8 +84,10 @@ public class ChargesMaintenance extends BaseClass {
 		elementActions.clickonElement(chargeMaintenanceObj.confirmOKButton());
 		waithelper.waitForElementVisible(chargeMaintenanceObj.oKButton(), 20000, 100);
 		elementActions.clickonElement(chargeMaintenanceObj.oKButton());
+		
 
 	}
+	
 	@And("Retrieve Saved Charge details")
 	public void Retrieve_Saved_Charge_details() {
 		elementActions.clickonElement(chargeMaintenanceObj.searchLookupBtn());

@@ -1,5 +1,6 @@
 Feature: IIS Parameters Module -Settlement Policy
 
+ @CRUD @Regression
   Scenario: CURD Testing of Settlement Policy
     Given User Navigate to IISP URL login
     Then log into IISP with valid credentials

@@ -5,7 +5,7 @@
 Feature: IIS Parameters Module - InsuranceType maintenance Screen
 
 
-
+@CRUD @Regression
   Scenario: CRUD testing For InsuranceType Maintenance Screen
     Given User Navigate to IISP URL login
     Then log into IISP with valid credentials

@@ -1,6 +1,7 @@
 #Author: Akhil Lal akhil.tt@azentio.com
 Feature: IIS Parameter-Third Party Maintenace M067MT
 
+@CRUD @Regression
   Scenario: CURD Testing Of Third Party Maintenace M067MT
     Given User Navigate to IISP URL login
     Then log into IISP with valid credentials

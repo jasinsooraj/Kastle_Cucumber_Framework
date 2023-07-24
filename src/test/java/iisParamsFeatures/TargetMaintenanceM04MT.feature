@@ -2,6 +2,7 @@
 #Keywords Summary :
 Feature: IIS Parameters Module -Target Miantenance Screen
 
+@CRUD @Regression
   Scenario: CURD Testing of the Target Miantenance Screen
     Given User Navigate to IISP URL login
     Then log into IISP with valid credentials

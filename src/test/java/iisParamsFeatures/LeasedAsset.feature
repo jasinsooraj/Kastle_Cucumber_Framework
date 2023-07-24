@@ -2,7 +2,7 @@
 #Keywords Summary :
 Feature: IIS Parameters Module - Leased Asset maintenance Screen
 
-
+@CRUD @Regression
   Scenario: CRUD testing For Charge Maintenance Screen
     Given User Navigate to IISP URL login
     Then log into IISP with valid credentials
