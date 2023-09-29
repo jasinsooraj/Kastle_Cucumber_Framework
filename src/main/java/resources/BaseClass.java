@@ -16,7 +16,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.interactions.Actions;
-
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import dataProvider.ConfigFileReader;
 import iisParamsPageobjects.HomePageObj;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -32,10 +33,13 @@ public class BaseClass {
 	String browserName =configFileReader.getBrowser();
 //	String phntomDriverPath=System.getProperty("user.dir")+"\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe";
 	if(browserName.equalsIgnoreCase("chrome")) {
-		System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
-//		ChromeOptions options = new ChromeOptions(); 
+		// commented set properties aftr moving to selenium latest version ,
+		
+		//System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
+
+		//ChromeOptions options = new ChromeOptions(); 
 //		options. addArguments("--headless");
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		//ChromeOptions options = new ChromeOptions();
 		//options.addArguments("--incognito");
 		//options.addArguments("--headless");
