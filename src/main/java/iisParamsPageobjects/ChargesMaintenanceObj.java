@@ -13,7 +13,6 @@ public class ChargesMaintenanceObj {
 	public ChargesMaintenanceObj(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
-	
 	}
 	
 	@FindBy(xpath = "//*[@id='trsChargesCode_M08MT']")
